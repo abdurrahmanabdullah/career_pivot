@@ -1,0 +1,211 @@
+/* Global Styles */
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
+  margin: 0; /* Remove default margin */
+  background-color: white; /* Set background color to white */
+}
+
+#root {
+ max-width: none !important;
+  padding: 0 !important; /* Remove padding */
+  height: 100%;
+  width: 100%; /* Ensure the root div takes up the full height */
+}
+
+/* Layout for the entire page */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Ensures the container takes at least the full screen height */
+}
+
+.flex-grow {
+  flex-grow: 1; /* Makes the main content grow to fill the remaining space */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 32px;
+  background-color: white;
+ 
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+}
+
+.header-center {
+  flex-grow: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-link {
+  color: #4B5563;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-link:hover {
+  color: #2D3748;
+}
+
+.header-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+}
+
+.login-btn {
+  color: #4B5563;
+  background-color: transparent;
+}
+
+.login-btn:hover {
+  background-color: #F3F4F6;
+}
+
+.signup-btn {
+  color: white;
+  background-color: #6B46C1;
+}
+
+.signup-btn:hover {
+  background-color: #553C9A;
+}
+
+/* Header line */
+.header-line {
+  border-top: 1px solid #E5E7EB;
+  margin-top: 16px;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+ flex-direction: column; /* Stack the text and button vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+  text-align: left; /* Align text to the left */
+  padding-top: 40px;
+  padding-left: 20%;
+  max-width: 1200px;
+  
+ 
+}
+
+.text-section {
+ 
+   max-width: 600px; 
+}
+
+.main-text {
+    font-size: 18px;
+  color: #4B5563;
+  line-height: 1.5;
+}
+
+.button-section {
+   margin-top: 16px;
+  display: flex;
+  margin-left: 20%; /* Center the button horizontally */
+}
+
+.register-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #6B46C1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #553C9A;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6B46C1;
+  color: white;
+  padding: 16px 32px;
+  margin-top: auto; /* Ensures footer sticks to the bottom */
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left, .header-right {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-section {
+    padding-right: 0;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 12px;
+  }
+}
