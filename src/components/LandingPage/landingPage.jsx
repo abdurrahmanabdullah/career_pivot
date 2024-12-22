@@ -20,7 +20,7 @@ const CareerPivotLanding = () => {
           <Link to="/login">
           <button className="header-btn login-btn">Log in</button> {/* Link to Login page */}
         </Link>
-          <button className="header-btn signup-btn">Sign up</button>
+         <Link to="/signup"> <button className="header-btn signup-btn">Sign up</button></Link>
         </div>
       </header>
 

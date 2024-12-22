@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import './loginPage.css'; // Import the CSS file
-
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
 
+  
+  const handleGoogleLogin = () => {
+    navigate('/google-login'); // Navigate to the Google login page
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle login logic here
@@ -69,7 +74,7 @@ const Login = () => {
 
         </form>
 <div className="social-buttons-container">
-  <button className="social-button google-button">
+<button className="social-button google-button" onClick={handleGoogleLogin}>
     <i className="fab fa-google"></i> Google
   </button>
   <button className="social-button linkedin-button">

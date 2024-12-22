@@ -191,4 +191,114 @@ text-align: start;
   background-color: #f0f0f0; /* Light gray background on hover */
 }
 
+/* ///-------------google log in style  */
+.google-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
 
+.google-login-card {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 320px;
+}
+
+.google-login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.google-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.google-login-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.google-divider {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.google-login-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.google-content-left {
+  flex: 1;
+}
+
+.google-content-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.google-content-subtitle {
+  font-size: 18px;
+  color: #666;
+}
+
+.google-content-subtitle {
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  font-size: 10px;
+  color: #555;
+}
+/* Right Section */
+.google-content-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Profile Section */
+.google-profile {
+  display: flex;
+  align-items: center;
+  
+}
+
+.account-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.account-email {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Divider Line */
+.google-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}

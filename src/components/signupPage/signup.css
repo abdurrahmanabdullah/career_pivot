@@ -1,0 +1,155 @@
+/* SignupPage.css */
+
+/* General styles */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6; /* gray-100 */
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 64rem; /* max-w-4xl */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 2rem; /* p-8 */
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    width: 33%;
+    padding: 1rem;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .left-column button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem; /* rounded-md */
+  }
+  
+  .left-column .linkedin {
+    background-color: #1a73e8; /* blue-600 */
+    color: white;
+  }
+  
+  .left-column .google {
+    background-color: #db4437; /* red-600 */
+    color: white;
+  }
+  
+  /* Updated middle-column styles */
+.middle-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    color: black;
+  }
+  
+  .separator {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .separator .line {
+    height: 11rem; /* Increase height for vertical lines */
+    width: 1px; /* Change to 1px width for vertical lines */
+    background-color: #d1d5db; /* gray-300 */
+  }
+  
+  .separator .line:first-child {
+    transform: rotate(180deg); /* Rotate the first line to make it opposite */
+  }
+  
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .right-column h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #1f2937; /* gray-800 */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    color: white;
+    
+  }
+  
+  .form-group label {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #4b5563;
+    margin-right: 80%; /* gray-700 */
+  }
+  
+
+
+
+  
+ /* Form group input fields */
+.form-group input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.375rem; /* rounded-md */
+    background-color: white; /* Set background color to white */
+    color: #1f2937; /* Set text color to dark gray for better readability */
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #1a73e8; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.3); /* Add a subtle shadow on focus */
+  }
+  
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-group input {
+    height: 1rem;
+    width: 1rem;
+    color: #3b82f6; /* blue-600 */
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.375rem; /* rounded */
+  }
+  
+  .checkbox-group label {
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* gray-600 */
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1a73e8; /* blue-600 */
+    color: white;
+    border-radius: 0.375rem; /* rounded-md */
+  }
+  
