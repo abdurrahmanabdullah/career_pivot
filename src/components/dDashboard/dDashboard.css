@@ -1,0 +1,241 @@
+/* Root and general layout */
+#root {
+  max-width: none !important;
+  padding: 0 !important; /* Remove padding */
+  text-align: start !important;
+  height: 100%;
+  width: 100%; /* Ensure the root div takes up the full height */
+}
+
+.dashboard {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #371c4b;
+  color: #ffffff;
+  width: 200px;
+  padding: 40px;
+  border-radius: 16px;
+ height: 70vh;
+margin-top: 85px;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+ 
+}
+
+.profile-picture {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.profile-name,
+.profile-age,
+.profile-designation {
+  margin: 10px 0;
+  font-family: "Roboto-Regular", Helvetica, sans-serif;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: black;
+  margin-right: 270px; /* Create space for job-preference-container */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-icon,
+.settings-icon {
+  position: relative;
+  font-size: 18px;
+  color: #371c4b; /* Adjust color as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon i,
+.settings-icon i {
+  font-size: 24px;
+  color: #371c4b; /* Icon color */
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #371c4b33;
+  border-radius: 16px;
+  padding: 20px;
+  width: 110%;
+  
+}
+
+.card-title {
+  font-size: 14px;
+  color: #371c4b;
+}
+
+.card-content {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6B46C1;
+  color: white;
+  padding: 16px 32px;
+  width: 100%; /* Ensure full width */
+  position: absolute;
+   /* Stick to the bottom */
+  bottom: 0; /* Align at the bottom */
+  left: 0; /* Align with the left edge */
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 16px;
+  margin-right: 10%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Adjust main layout to account for the fixed footer */
+main.dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 70px; /* Space for the footer height */
+}
+
+/* Job Preference Section (Right-hand corner) */
+.job-preference-container {
+  margin-right: 152%;
+    position: relative;
+  top: 12%;
+  height: 35%;
+  right: 30%;
+ background-color: #371c4b;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 100; /* Ensure it appears above other content */
+}
+
+.job-preference-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job-preference-description {
+  font-size: 14px;
+  margin-top: 70%;
+}
+
+.job-preference-btn {
+  padding: 8px 16px;
+  background-color: whitesmoke;
+  color:  #371c4b;;
+ border: 2px solid #553C9A;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 160%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.job-preference-btn:hover {
+  background-color: #553C9A;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .content {
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  /* Make job preference container relative on smaller screens */
+  .job-preference-container {
+    position: relative; /* Change to relative to prevent overlap */
+    width: 10%;
+    top: auto; /* Remove fixed top positioning */
+    margin-top: 20px; /* Add space from the top */
+  }
+
+  .footer {
+    position: relative;
+    padding: 16px;
+  }
+
+  /* Adjust content-section layout for small screens */
+  .content-section {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

@@ -153,7 +153,8 @@ html, body {
   background-color: #6B46C1;
   color: white;
   padding: 16px 32px;
-  margin-top: auto; /* Ensures footer sticks to the bottom */
+  margin-top: auto; 
+  /* Ensures footer sticks to the bottom */
 }
 
 .footer-left {
