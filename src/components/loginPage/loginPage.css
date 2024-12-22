@@ -20,11 +20,7 @@
 }
 
 
-.input-container {
-    background-color: transparent !important; /* Forcefully disable the background */
-text-align: start;
 
-}
 
 /* Form Container */
 .form-container {
@@ -44,24 +40,27 @@ text-align: start;
   margin-bottom: 20px;
   color: black;
 }
-
-/* Input Container */
-.input-container {
-    background-color: white;
-  margin-bottom: 15px;
-}
-
 /* Label */
 .label {
   display: block;
   margin-bottom: 5px;
 }
 
+
+
+.input-container {
+    background-color: transparent !important; /* Forcefully disable the background */
+text-align: start;
+
+}
+
+
+
+
 /* Input Fields */
 
- /* Input Fields */
 .input {
-    
+     color: black;
   width: 90%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -70,6 +69,37 @@ text-align: start;
   background-color:whitesmoke; /* Optional: Set background color to dark for contrast */
 }
 
+
+/* Password Input Container */
+.password-input-container {
+  position: relative; /* Set the container as the positioning reference */
+  width: 90%; /* Ensures the input spans the full width of the container */
+}
+
+/* Input Field */
+.password-input-container .input {
+  width: 100%; /* Full width of the container */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  position: relative; /* Ensures proper layering */
+}
+
+/* Eye Icon */
+.eye-icon {
+  position: absolute; /* Position the icon relative to the container */
+  top: -20px; /* Move the icon above the text field */
+  right: 10px; /* Align the icon to the right edge of the input */
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.eye-icon:hover {
+  color: #000; /* Darker color on hover */
+}
 
 
 /* Button */
@@ -83,6 +113,38 @@ text-align: start;
   margin-top: 15px;
 }
 
+
+
+/* Container for the link and button */
+.forgot-password-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 10px; /* Add some spacing above */
+}
+
+/* Forgot Password Link */
+.forgot-password-container a {
+  text-decoration: underline; /* Underline the link */
+  color: black; /* Ensure the link color is black */
+  margin-bottom: 10px;
+  margin-right: 50%;
+  /* Add some space between the link and the button */
+}
+
+/* Log in Button */
+.forgot-password-container .button {
+  background-color:#888;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%; /* Make the button span the full width */
+}
+
+
+
 /* Social Buttons */
 .social-button {
   background-color: #fff;
@@ -93,3 +155,40 @@ text-align: start;
   cursor: pointer;
   margin: 10px;
 }
+.social-buttons-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 15px; /* Add spacing above the buttons */
+}
+
+.google-button {
+  color: #db4437; /* Google red */
+  border: 1px solid #db4437;
+  background-color: white;
+}
+
+.linkedin-button {
+  color: #0077b5; /* LinkedIn blue */
+  border: 1px solid #0077b5;
+  background-color: white;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px; /* Add some padding for better appearance */
+  margin: 0; /* Remove vertical margin */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+

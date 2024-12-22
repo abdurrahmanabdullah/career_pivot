@@ -43,6 +43,7 @@ const Login = () => {
             <label htmlFor="password" style={{ color: 'black' }}>
               Password
             </label>
+             
             <div className="password-input-container">
               <input
                 type={showPassword ? 'text' : 'password'} // Toggle input type based on state
@@ -59,21 +60,24 @@ const Login = () => {
             </div>
           </div>
 
-          <a href="#">Forgot password?</a>
+          <div className="forgot-password-container">
+  <a href="#">Forgot password?</a>
+  <button type="submit" className="button">
+    Log in
+  </button>
+</div>
 
-          <button type="submit" className="button">
-            Log in
-          </button>
         </form>
+<div className="social-buttons-container">
+  <button className="social-button google-button">
+    <i className="fab fa-google"></i> Google
+  </button>
+  <button className="social-button linkedin-button">
+    <i className="fab fa-linkedin"></i> LinkedIn
+  </button>
+</div>
 
-        <div>
-          <button className="social-button">
-            <i className="fab fa-linkedin"></i> LinkedIn
-          </button>
-          <button className="social-button">
-            <i className="fab fa-google"></i> Google
-          </button>
-        </div>
+
       </div>
     </div>
   );
