@@ -1,9 +1,9 @@
 
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
-import "./home.css";
+import "./dashboard.css";
 import { NavLink } from 'react-router-dom';
-function Home() {
+function Dashboard() {
   return (
     <main className="dashboard">
       {/* Sidebar Section */}
@@ -27,7 +27,8 @@ function Home() {
           </div>
           <nav style={{marginLeft:"45%"}} className="navigation">
             <MenuItem>Home</MenuItem>
-           <NavLink to="/dashboard" activeClassName="active-link">Dashboard</NavLink>
+            
+            <NavLink to="/dashboard" activeClassName="active-link">Dashboard</NavLink>
             <MenuItem>Blogs</MenuItem>
             <MenuItem>Contact Us</MenuItem>
             <div className="notification-icon">
@@ -38,41 +39,18 @@ function Home() {
 
         <div className="content-section">
           <div style={{ background: "#d7d2db" }} className="card">
-            <h3 className="card-title">Professional Summary</h3>
+            <h3 className="card-title">Free or pro details</h3>
           </div>
 
           <div style={{ background: "#9587a0" }} className="card">
-            <h3 className="card-title">Education</h3>
+            <h3 className="card-title">Question Details</h3>
           </div>
 
-          <div style={{ background: "#d7d2db" }} className="card">
-            <h3 className="card-title">Skill</h3>
-          </div>
-
-          <div style={{ background: "#9587a0" }} className="card">
-            <h3 className="card-title">Projects</h3>
-          </div>
-
-          <div style={{ background: "#d7d2db" }} className="card">
-            <h3 className="card-title">Employment History</h3>
-          </div>
-
-          <div style={{ background: "#9587a0" }} className="card">
-            <h3 className="card-title">Courses</h3>
-          </div>
+          
         </div>
       </section>
 
-      {/* Job Preference Section (Top-right corner) */}
-
-      <div>   <div className="job-preference-container">
-        <h3 className="job-preference-title">Job Preference</h3>
-
-        <button className="job-preference-btn">Continue</button>
-      </div>
-
-
-      </div>
+  
 
 
 
@@ -89,4 +67,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Dashboard;

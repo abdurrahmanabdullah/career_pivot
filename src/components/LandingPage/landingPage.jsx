@@ -7,10 +7,10 @@ const CareerPivotLanding = () => {
       {/* Header */}
       <header className="header">
         <div className="header-left">
-          <img
-            src="/path-to-logo.png" // Replace with your logo path
+           <img  
+              src="/assets/CareerPivot.png" // Replace with your logo path
             alt="CareerPivot iO"
-            className="logo"
+            className="landinglogo"
           />
         </div>
         <div className="header-center"></div>
