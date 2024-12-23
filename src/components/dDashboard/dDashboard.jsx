@@ -19,6 +19,13 @@ const Dashboard = () => {
       {/* Content Section */}
       <section className="content">
         <header className="header">
+             <div style={{marginRight:"70%"}} className="header-left">
+          <img
+              src="/assets/CareerPivot.png" // Replace with your logo path
+            alt="CareerPivot iO"
+            className="logo"
+          />
+        </div>
           <nav className="navigation">
             <MenuItem>Home</MenuItem>
             <MenuItem>Dashboard</MenuItem>
