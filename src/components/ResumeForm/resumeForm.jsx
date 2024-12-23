@@ -4,10 +4,15 @@ import './ResumeForm.css'; // Add a separate CSS file for styles
 const ResumeForm = () => {
   return (
     <div className="resume-form">
-      <header className="header">
-        <img src="logo.png" alt="Career Pivot IO Logo" className="logo" />
-      </header>
+    
+   
       <form style={{color:"black"}} className="form-container">
+          
+      <img  
+              src="/assets/CareerPivot.png" // Replace with your logo path
+            alt="CareerPivot iO"
+            className="resumelogo"
+          />
         <h2>Personal details</h2>
         <div className="form-columns">
           <div className="form-column-left">
@@ -50,7 +55,7 @@ const ResumeForm = () => {
 
         <div className="section">
           <h2>Professional Summary</h2>
-          <textarea placeholder="Write 2-4 short, energetic sentences..."></textarea>
+          <textarea placeholder=""></textarea>
         </div>
         <div className="section">
           <h2>Education</h2>
@@ -59,27 +64,31 @@ const ResumeForm = () => {
         </div>
         <div className="section">
           <h2>Websites & Social Links</h2>
-          <p>You can add links to Websites, your portfolio...</p>
+          <p>You can add links to Websites, your portfolio,Linked In profile or personal website</p>
           <button type="button">+ Add Link</button>
         </div>
         <div className="section">
           <h2>Skills</h2>
-          <p>Make sure they match the key skills mentioned...</p>
+          <p>Make sure they match the key skills mentioned in the job listing</p>
           <button type="button">+ Add Skill</button>
         </div>
         <div className="section">
           <h2>Courses</h2>
+          <p>add</p>
           <button type="button">+ Add Courses</button>
         </div>
         <div className="section">
           <h2>Projects</h2>
+          <p>add</p>
           <button type="button">+ Add Project</button>
         </div>
         <div className="section">
           <h2>Employment History</h2>
+          <p>add</p>
           <button type="button">+ Add Internship</button>
         </div>
         <div className="section">
+            <p>add line</p>
           <h2>Job Preference</h2>
           <button type="button">+ Add</button>
         </div>

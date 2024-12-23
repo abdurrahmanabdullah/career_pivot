@@ -1,13 +1,13 @@
 
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
-import "./dDashboard.css";
+import "./home.css";
 
-const Dashboard = () => {
+function Home() {
   return (
     <main className="dashboard">
       {/* Sidebar Section */}
-      <section style={{ textAlign: "center" }} className="sidebar">
+      <section style={{marginLeft:"3%"}} className="sidebar">
         <div className="profile-section">
           <div className="profile-picture" />
           <h2 className="profile-name">Name</h2>
@@ -18,14 +18,13 @@ const Dashboard = () => {
 
       {/* Content Section */}
       <section className="content">
-        <header className="header">
-             <div style={{marginRight:"70%"}} className="header-left">
-          <img
+        <header style={{marginRight:"45%"}} className="header">
+          <div className="header-left">
+            <img
               src="/assets/CareerPivot.png" // Replace with your logo path
-            alt="CareerPivot iO"
-            className="logo"
-          />
-        </div>
+              alt="CareerPivot iO"
+              className="logo" />
+          </div>
           <nav className="navigation">
             <MenuItem>Home</MenuItem>
             <MenuItem>Dashboard</MenuItem>
@@ -65,13 +64,13 @@ const Dashboard = () => {
       </section>
 
       {/* Job Preference Section (Top-right corner) */}
-   
-<div>   <div className="job-preference-container">
+
+      <div>   <div className="job-preference-container">
         <h3 className="job-preference-title">Job Preference</h3>
-       
-         <button className="job-preference-btn">Continue</button>
+
+        <button className="job-preference-btn">Continue</button>
       </div>
-      
+
 
       </div>
 
@@ -88,6 +87,6 @@ const Dashboard = () => {
       </footer>
     </main>
   );
-};
+}
 
-export default Dashboard;
+export default Home;
