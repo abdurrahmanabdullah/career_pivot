@@ -92,7 +92,7 @@
 }
 
 .header-left .logo {
-    height: 100px; /* Adjusted for better scaling */
+    height: 60px; /* Adjusted for better scaling */
 }
 
 .navigationn {
@@ -107,7 +107,7 @@
     text-decoration: none;
     color: #725483;
     font-weight: bold;
-    font-size: 22px; /* Reduced font size for smaller screens */
+    font-size: 15px; /* Reduced font size for smaller screens */
 }
 
 .navigation .active-link {
@@ -173,7 +173,8 @@
     }
 
     .header-left .logo {
-        height: 50px;
+        height: 40px;
+        margin-left: 20%;
     }
 
     .navigationn {

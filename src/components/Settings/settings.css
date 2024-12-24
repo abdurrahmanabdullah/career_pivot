@@ -1,0 +1,380 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1555px;
+  margin: 0 auto;
+}
+
+.basic-info-container {
+  width: 100%;
+  height: 685px;
+  border: 1px solid #cbc1d2;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 32px;
+  background-color: rgba(203, 193, 210, 0.34);
+}
+
+.header span {
+  font-size: 16px;
+  color: #371c4b;
+  line-height: 19px;
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.basic-info-header {
+  background-color: rgba(203, 193, 210, 0.34); /* Add background color to the header */
+  
+   
+  
+  padding: 1px;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+}
+.profile-section {
+  display: flex;
+ 
+  text-align: center;
+}
+
+
+.profile-text .title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.profile-text .subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0 0 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background-color: rgba(203, 193, 210, 0.4);
+  border-radius: 4px;
+}
+
+.input-container input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.update-button {
+  align-self: flex-end;
+  padding: 16px 24px;
+  background-color: #fff;
+  border: 1px solid #371c4b;
+  border-radius: 8px;
+  color: #371c4b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #371c4b;
+  color: #fff;
+}
+
+.notifications-container {
+  width: 100%;
+  max-width: 1555px;
+  height: 505px;
+  position: relative;
+  background-image: url(https://dashboard.codeparrot.ai/api/assets/Z2r4sI6CYQNjI8gx);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.subtext {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.toggle {
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.social-accounts-container {
+  width: 100%;
+  max-width: 1555px;
+  height: 505px;
+  border: 1px solid #371c4b;
+  border-radius: 8px;
+  background: #fff;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.accounts-list {
+  padding: 20px 32px;
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.platform {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.status {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.action-button {
+  width: 159px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #371c4b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+}
+
+.update-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 32px 20px;
+}
+
+.update-button {
+  width: 159px;
+  height: 56px;
+  padding: 16px 24px;
+  border: 1px solid #371c4b;
+  border-radius: 8px;
+  background: #fff;
+  color: #371c4b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-button:hover {
+  background: #f5f5f5;
+}
+
+.action-button:hover {
+  text-decoration: underline;
+}
+
+.password-security-container {
+  width: 100%;
+  max-width: 1555px;
+  height: 463px;
+  background: url('https://dashboard.codeparrot.ai/api/assets/Z2r4sY6CYQNjI8gy') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.change-password-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.change-password-section h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 20px;
+  margin: 0;
+}
+
+.password-input-container {
+  width: 534px;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(203, 193, 210, 0.4);
+  border-radius: 4px;
+}
+
+.password-input img {
+  width: 24px;
+  height: 24px;
+}
+
+.password-input input {
+  border: none;
+  background: transparent;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  width: 100%;
+  outline: none;
+}
+
+.new-passwords-row {
+  display: flex;
+  gap: 18px;
+}
+
+.new-passwords-row .password-input {
+  flex: 1;
+}
+
+.delete-account-container {
+  width: 100%;
+  max-width: 1555px;
+  height: 274px;
+  border-radius: 8px;
+  background: url('https://dashboard.codeparrot.ai/api/assets/Z2r4sY6CYQNjI8gz') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #371C4B;
+  padding: 0 40px;
+}
+
+.confirm-section {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 40px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url('https://dashboard.codeparrot.ai/api/assets/Z2r4sY6CYQNjI8g0') no-repeat center center;
+  background-size: contain;
+  border: none;
+}
+
+.confirm-text {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #11111199;
+}
+
+.delete-button {
+  align-self: flex-end;
+  padding: 16px 24px;
+  background: #FFFFFF;
+  border: 1px solid #371C4B;
+  border-radius: 8px;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #371C4B;
+  cursor: pointer;
+  margin-right: 40px;
+  min-width: 341px;
+  text-align: center;
+}
+
+.delete-button:hover {
+  background: #F5F5F5;
+}
+
+.delete-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-button.disabled:hover {
+  background: #FFFFFF;
+}
+
