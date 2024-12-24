@@ -7,7 +7,8 @@ import GoogleLoginPage from './components/loginPage/googleLoginPage';
 import SignUpPage from './components/signupPage/signup';
 import DashBoard from './components/DashBoard/dashboard';
 import Blog from './components/Blog/blog';
-// import LandingPage from './components/LandingPage/landingPage';
+import Header from './components/Header/header';
+import LandingPage from './components/LandingPage/landingPage';
 // import ResumeForm from './components/ResumeForm/resumeForm';
 import './App.css';
 
@@ -15,11 +16,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Blog />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/google-login" element={<GoogleLoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
           <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/Header" element={<Header />} />
       </Routes>
     </Router>
   );

@@ -12,9 +12,9 @@ html, body {
   width: 100%; /* Ensure the root div takes up the full height */
 }
 .landinglogo {
-width: 100px; /* Set the desired width */
+width: 180px; /* Set the desired width */
   height: auto; /* Maintain the aspect ratio */
-  padding: 0 !important;
+  
   margin-left: auto;
 }
 /* Layout for the entire page */
@@ -50,7 +50,7 @@ width: 100px; /* Set the desired width */
 }
 
 .logo {
-  height: 32px;
+  height: 100px;
 }
 
 .header-center {
@@ -137,17 +137,18 @@ width: 100px; /* Set the desired width */
 }
 
 .register-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #6B46C1;
-  color: white;
-  border: none;
+  padding: 12px 34px;
+  font-size: 26px;
+background-color: white;
+  color: black;
+  border: 2px solid black;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .register-btn:hover {
-  background-color: #553C9A;
+  border-color: #553C9A;
+  border-width: 4px;
 }
 
 /* Footer */
@@ -203,7 +204,7 @@ width: 100px; /* Set the desired width */
   }
 
   .register-btn {
-    width: 100%;
+    width: 70%;
   }
 
   .footer {

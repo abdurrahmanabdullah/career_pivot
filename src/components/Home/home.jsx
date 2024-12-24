@@ -1,9 +1,16 @@
-
+import  { useState } from "react";
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import "./home.css";
 import { NavLink } from 'react-router-dom';
+import Header from "../Header/header"; 
+import Footer from "../Footer/footer";
 function Home() {
+const [isToggled, setIsToggled] = useState(false);
+  const handleToggle = () => {
+    setIsToggled(!isToggled);
+  };
+
   return (
     <main className="dashboard">
       {/* Sidebar Section */}
@@ -18,23 +25,7 @@ function Home() {
 
       {/* Content Section */}
       <section className="content">
-        <header style={{marginRight:"45%"}} className="header">
-          <div className="header-left">
-            <img
-              src="/assets/CareerPivot.png" // Replace with your logo path
-              alt="CareerPivot iO"
-              className="logo" />
-          </div>
-          <nav style={{marginLeft:"45%"}} className="navigation">
-            <MenuItem>Home</MenuItem>
-           <NavLink to="/dashboard" activeClassName="active-link">Dashboard</NavLink>
-            <MenuItem>Blogs</MenuItem>
-            <MenuItem>Contact Us</MenuItem>
-            <div className="notification-icon">
-              <i className="fa fa-bell"></i>
-            </div>
-          </nav>
-        </header>
+      <Header />
 
         <div className="content-section">
           <div style={{ background: "#d7d2db" }} className="card">
@@ -78,13 +69,7 @@ function Home() {
 
 
       {/* Footer Section */}
-      <footer className="footer">
-        <span className="footer-left">© All rights reserved.</span>
-        <div className="footer-right">
-          <a href="#" className="footer-link">Privacy Policy</a>
-          <a href="#" className="footer-link">Terms of Service</a>
-        </div>
-      </footer>
+     <Footer/>
     </main>
   );
 }

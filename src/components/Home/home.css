@@ -149,40 +149,10 @@ gap: 2%;
   font-size: 16px;
 }
 
-/* Footer Section */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #371C4B;
-  color: white;
-  padding: 16px 32px;
-  width: 100%; /* Ensure full width */
-  position: absolute; /* Fixed footer */
-  bottom: 0; /* Stick to the bottom */
-  left: 0; /* Align with the left edge */
-  height: 55px; /* Set height for footer */
-}
 
-.footer-left {
-  font-size: 14px;
-}
 
-.footer-right {
-  display: flex;
-  gap: 16px;
-  margin-right: 10%;
-}
 
-.footer-link {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
 
-.footer-link:hover {
-  text-decoration: underline;
-}
 
 /* Job Preference Section (Right-hand corner) */
 .job-preference-container {
@@ -269,11 +239,7 @@ gap: 2%;
     margin-top: 20px; /* Add spacing from the top */
   }
 
-  .footer {
-    
-    position: relative;
-    padding: 16px;
-  }
+
 
   .content-section {
     gap: 15px;
@@ -283,4 +249,51 @@ gap: 2%;
     width: 100%;
   }
   
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45px;
+  height: 20px;
+  background-color: #371c4b; 
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin-left: 18px;
+}
+
+.toggle-container.toggled {
+  background-color: #6a4b7d; 
+}
+
+.toggle-circle {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-container.toggled .toggle-circle {
+  transform: translateX(-25px);
+}
+
+.toggle-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
 }

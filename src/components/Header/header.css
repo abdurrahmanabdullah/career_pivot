@@ -1,0 +1,211 @@
+/* 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left .logo {
+    height: 100px;
+  }
+  
+  .navigationn {
+    margin-left: 120vh;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .navigationn a,
+  .navigationn .MuiMenuItem-root {
+    text-decoration: none;
+    color: #725483;
+    font-weight: bold;
+    font-size: 22px;
+    
+  }
+  
+  .navigation .active-link {
+    color: #007bff;
+  }
+  
+  .notification-icon {
+    font-size: 24px;
+  }
+  
+
+
+
+
+
+
+
+
+  
+  .toggle-container {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .toggle-lines .line {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    margin: 2px 0;
+  }
+
+   */
+
+   .header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left .logo {
+    height: 100px; /* Adjusted for better scaling */
+}
+
+.navigationn {
+    margin-left: auto; /* Adjusted for better alignment */
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjusted gap */
+}
+
+.navigationn a,
+.navigationn .MuiMenuItem-root {
+    text-decoration: none;
+    color: #725483;
+    font-weight: bold;
+    font-size: 22px; /* Reduced font size for smaller screens */
+}
+
+.navigation .active-link {
+    color: #007bff;
+}
+
+.notification-icon {
+    font-size: 24px;
+}
+
+.toggle-container {
+    margin-right: 60px; /* Adjusted margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjusted width */
+    height: 15px; /* Adjusted height */
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 15px; /* Adjusted size */
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggle-lines .line {
+    height: 3px; /* Adjusted thickness */
+    width: 100%;
+    background-color: #333;
+    margin: 1px 0; /* Reduced margin */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (768px and up) */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header-left .logo {
+        height: 60px;
+    }
+
+    .navigationn {
+        gap: 20px;
+    }
+
+    .navigationn a,
+    .navigationn .MuiMenuItem-root {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-left .logo {
+        height: 50px;
+    }
+
+    .navigationn {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .navigationn a,
+    .navigationn .MuiMenuItem-root {
+        font-size: 14px;
+    }
+
+    .toggle-container {
+        margin-right: 92%;
+        margin-top: 2%;
+        align-self: flex-end;
+    }
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+
+    .header-left .logo {
+        height: 40px;
+    }
+
+    .navigationn a,
+    .navigationn .MuiMenuItem-root {
+        font-size: 12px;
+    }
+}
